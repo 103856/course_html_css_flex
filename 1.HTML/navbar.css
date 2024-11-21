@@ -1,0 +1,39 @@
+.nav-enlace {
+  display: inline-block;
+  background: salmon;
+  color: aliceblue;
+  padding: 10px 30px;
+  text-decoration: none;
+  margin: 10px 0;
+}
+/* cuando pasa el mouse cambia de color */
+.nav-enlace:hover {
+  background: black;
+}
+nav {
+  background: purple;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+.navbutton{
+    background: salmon;
+    color: aliceblue;
+    padding: 10px 0;
+    border: 2px solid white;
+    display: none;
+}
+
+
+@media (max-width: 600px) {
+  nav {
+    background: black;
+    flex-direction: column;
+  }
+  .navbutton{
+    display: inline-block;
+  }
+  .desaparece{
+    display: none;
+  }
+}
